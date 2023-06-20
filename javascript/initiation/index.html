@@ -3,10 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cours initiation</title>
+    <title>Cours d'initiation</title>
 </head>
 <body>
-    
+    <div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Page 1</a>
+                </li>
+                <li>
+                    <a href="page2.html">Page 2</a>
+                </li>
+                <li>
+                    <a href="page3.html">Page 3</a>
+                </li>
+                <li>
+                    <a href="page4.html">Page 4</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <h1>Cours d'initiation</h1>
+    <h2>L'API BOM et l'interface Window en JS</h2>
+    <p>BOM : Browser Object Model</p>
+    <h3>Les objects du BOM :</h3>
+    <ul>
+        <li>L'objet <b>Navigator</b> : qui représente l'état et l'identité 
+            du navigateur qu'on va utiliser avec l'API <b>Geolocation</b></li>
+        <li>L'objet <b>History</b> : nous permet de manipuler 
+            l'historique de navigation du navigateur</li>
+        <li>L'objet <b>Location</b> : nous fournit les informations 
+            relatives à l'URL de la page courante</li>
+        <li>L'objet <b>Screen</b> : va nous permettre d'examiner les propriétés de l'écran qui affiche la fenetre courante</li>
+        <li>L'objet <b>Document</b> : c'est encore le DOM dans son ensemble (d'une manière générale)</li>
+    </ul>
+
+    <h3>Quelques propriétés, méthodes et fonctionnement de l'objet Window</h3>
+    <h5>Les propriétés window</h5>
+    <p id="idP1"></p>
+    <p id="idP2"></p>
+
+    <h5>Les méthodes window</h5>
+    <button id="idP3">window.open</button>
+    <button id="idP4">window.resizeBy</button>
+    <button id="idP5">window.resizeTo</button>
+    <button id="idP6">window.moveBy</button>
+    <button id="idP7">window.moveTO</button>
+    <button id="idP8">window.close</button>
+
+    <h3>L'interface et l'objet Navigator et la géolocalisation en JS</h3>
+    <h5>Infos sur navigateur</h5>
+    <p id="navIdP1"></p>
+
+    <h5>Géolocalisation</h5>
+    <p id="navIdP2"></p>
+    <p id="navIdP3"></p>
+
+    <h3>L'interface et l'objet History en JS</h3>
+    <p id="hIdP1"></p>
+
+    <button id="hIdBtn1">Aller vers 2 pages en arrière</button>
+    <button id="hIdBtn2">Aller vers la page précédente</button>
+    <button id="hIdBtn3">Aller vers la page suivante</button>
+
+    <h3>L'interface et l'objet Location en JS</h3>
+    <button id="hIdBtn4">Recharger la page</button>
+    <button id="hIdBtn5">Charger un nouveau document</button>
+    <button id="hIdBtn6">Remplacer le document</button>
+
+    <h3>L'interface et l'objet Sreen en JS</h3>
+    <p id="sIdP1"></p>
+
     <script src="script.js"></script>
 </body>
 </html>
