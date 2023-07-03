@@ -280,3 +280,24 @@ idDivision.addEventListener('click', function() {
     }
 });
 
+/**
+ * Mode use strict
+ */
+
+'use strict';
+let b1 // pas d'erreur générer avec use strict
+console.log(b1);
+
+b2 = 'Bonjour c1'; // pas d'erreur générer avec use strict
+// console.log(typeof b2);
+console.log(b2);
+
+// b3 // va nous générer une erreur avec le mode use strict
+
+function test() {
+    'use strict';
+    let y = 0;
+}
+test()
+
+

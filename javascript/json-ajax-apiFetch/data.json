@@ -1,0 +1,16 @@
+{
+    "first_name": "Maliki",
+    "last_name": "TCHEROU",
+    "email": "test@demo.com",
+    "adress": [
+        {
+            "rue": 15,
+            "name": "Tarik"
+        },
+        {
+            "rue": 19,
+            "name": "Ibn"
+        }
+    ],
+    "age": 31
+}
