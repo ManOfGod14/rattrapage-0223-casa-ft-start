@@ -7,7 +7,30 @@
 </head>
 <body>
     <h1>Le Format JSON, Ajax, et l'API Fetch en JS</h1>
+    
+    <h3>Affichage des données d'un fichier nJSON avec l'api <b>Fetch</b></h3>
     <p id="dataJson"></p>
+
+    <h3>Consommation d'un api en utilisant l'objet <b>XMLHttpRequest</b></h3>
+    <p id="dataAjaxId"></p>
+
+    <h3>Consommation d'un api en utilisant l'API Fetch</h3>
+    <p id="dataApiFetch"></p>
+    
+    <div>
+        <h4>Ajouter un post</h4>
+        <form id="apiForm">
+            <input type="text" name="title" id="title" style="width: 80%; margin: 20px;">
+            
+            <textarea name="body" id="body" cols="30" rows="5" style="width: 80%; margin: 20px;"></textarea>
+            
+            <input type="number" name="userId" id="userId" style="width: 80%; margin: 20px;">
+
+            <br />
+            <button type="submit">Enregistrer</button>
+        </form>
+        <p id="apiFormData"></p>
+    </div>
 
     <script src="script.js"></script>
 </body>

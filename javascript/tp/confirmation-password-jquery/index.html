@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP Vérification de la conformité de mot de passe</title>
+    <link rel="stylesheet" href="assets/bootstrap.min.css">
+</head>
+<body>
+    <div class="container py-3">
+        <h1>TP Vérification de la conformité de mot de passe</h1>
+
+        <form action="">
+            <div class="row">
+                <div class="form-group col-md-6">
+                    <label for="password" class="">
+                        Password <span class="text-danger">*</span>
+                    </label>
+                    <input type="password" name="password" id="password" class="form-control" required>
+                </div>
+
+                <div class="form-group col-md-6">
+                    <label for="password_confirmation" class="">
+                        Confirm Password <span class="text-danger">*</span>
+                    </label>
+                    <input type="password" name="password_confirmation" id="password_confirmation" class="form-control" required>
+                    <div class="py-1">
+                        <span id="pwd_message"></span>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="assets/jquery-3.6.4.min.js"></script>
+    <script>
+        $('#password, #password_confirmation').on('keyup', function () {
+            if($('#password').val() == $('#password_confirmation').val()) {
+                $('#pwd_message').html("Les mots de passe correspondent !").css('color', 'green');
+            } else {
+                $('#pwd_message').html("Les mots de passe ne correspondent pas !").css('color', 'red');
+            }
+        })
+    </script>
+</body>
+</html>
