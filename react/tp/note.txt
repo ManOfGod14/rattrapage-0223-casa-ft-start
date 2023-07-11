@@ -1,0 +1,15 @@
+***************************************
+Liste des commandes utiles dans React
+***************************************
+## Crée une application React
+https://create-react-app.dev/docs/getting-started
+$
+$ npx create-react-app product-filter
+$ cd product-filter
+$ npm start
+$
+
+## installer bootstrap et react-bootstrap
+$ npm install react-bootstrap bootstrap
+$ npm install bootstrap-icons
+$
