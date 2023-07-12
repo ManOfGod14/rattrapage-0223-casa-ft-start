@@ -6,7 +6,13 @@ import {
 } from 'react-bootstrap';
 import { 
   Compteur1, 
-  Compteur2 
+  Compteur2, 
+  Compteur3,
+  Compteur4,
+  Compteur5,
+  Compteur6,
+  Compteur7,
+  Compteur8
 } from './app/Compteurs';
 
 function App() {
@@ -24,10 +30,16 @@ function App() {
             <h2 className="py-2">Le hook useState</h2>
             <Compteur1 />
             <Compteur2 />
-
-            <h2 className="py-2">Le hook useEffect</h2>
+            <Compteur3 />
+            <Compteur4 />
 
             <h2 className="py-2">Création des hooks personnalisés</h2>
+            <Compteur5 />
+
+            <h2 className="py-2">Le hook useEffect</h2>
+            <Compteur6 />
+            <Compteur7 />
+            <Compteur8 />
 
             <h2 className="py-2">Le hook useRef</h2>
           </Col>
