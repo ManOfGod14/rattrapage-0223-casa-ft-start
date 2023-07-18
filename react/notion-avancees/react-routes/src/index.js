@@ -1,21 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import 'bootstrap-icons/font/bootstrap-icons.min.css';
-import './assets/style.css';
-
-import 'react-toastify/dist/ReactToastify.css';
-import { ToastContainer } from 'react-toastify';
+import {BrowserRouter} from 'react-router-dom';
+import Routers from './routers';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
-    <ToastContainer theme='colored'/>
+    <BrowserRouter basename='/'>
+      <Routers ></Routers>
+    </BrowserRouter>
   </React.StrictMode>
 );
 

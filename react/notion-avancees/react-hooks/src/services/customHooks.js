@@ -1,7 +1,7 @@
 /**
  * mes hooks personnalisés
  */
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 /**
  * par convention React a décidé que chaque hook personnalisé a créer
@@ -20,4 +20,37 @@ export function useIncrementation(initial = 0, step = 1) {
 
     // retourne les valeurs du hook
     return [count, incrementer]
+}
+
+/**
+ * hook personnalisé pour utiliser l'api fetch
+ * @param {*} apiUrl 
+ */
+export function useApiFetchAjax(apiUrl) {
+    const [apiData, setApiData] = useState({
+        loading: true,
+        data: []
+    })
+
+    useEffect(() => {
+        (async () => {
+            const reponse = await fetch(apiUrl)
+            const resData = await reponse.json()
+
+            if(reponse.ok) {
+                setApiData({
+                    loading: false,
+                    data: resData
+                })
+            } else {
+                alert("Echec de récupération des données !")
+                setApiData({
+                    loading: false,
+                    data: []
+                })
+            }
+        })()
+    }, [])
+
+    return [apiData.loading, apiData.data]
 }
