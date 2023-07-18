@@ -58,12 +58,32 @@ function Navbar() {
                         </li>
                     </ul>
 
-                    <form className="d-flex">
-                        <button className="btn btn-outline-primary" type="submit">
-                            <i className="bi-cart-fill me-1"></i> Mon panier
-                            <span className="badge bg-dark text-white ms-1 rounded-pill">0</span>
-                        </button>
-                    </form>
+                    <div className='d-flex'>
+                        <Link to="/auth/login">
+                            <button className="btn btn-success btn-sm me-2">
+                                <i className="bi bi-box-arrow-in-right me-1"></i> Connexion
+                            </button>
+                        </Link>
+
+                        <Link to="/auth/inscription">
+                            <button className="btn btn-primary btn-sm me-2">
+                                <i className="bi bi-box-arrow-in-left me-1"></i> Inscription
+                            </button>
+                        </Link>
+
+                        <Link to={'/account/profile'}>
+                            <button className="btn btn-secondary btn-sm me-2">
+                                <i className="bi bi-person-circle me-1"></i> Mon compte
+                            </button>
+                        </Link>
+
+                        <form>
+                            <button className="btn btn-outline-primary btn-sm" type="submit">
+                                <i className="bi-cart-fill me-1"></i> Mon panier
+                                <span className="badge bg-dark text-white ms-1 rounded-pill">0</span>
+                            </button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </nav>
